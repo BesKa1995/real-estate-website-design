@@ -102,6 +102,39 @@ body {
   background-color: #c69963;
   grid-column: sidebar-start/sidebar-end;
   grid-row: 1 / -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-btn {
+  border: none;
+  width: 4.5rem;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+  margin-top: 4rem;
+}
+
+.nav-btn::before, .nav-btn::after {
+  content: "";
+  width: 4.5rem;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+}
+
+.nav-btn::before {
+  -webkit-transform: translateY(-1.5rem);
+          transform: translateY(-1.5rem);
+}
+
+.nav-btn::after {
+  -webkit-transform: translateY(1.5rem);
+          transform: translateY(1.5rem);
 }
 
 .header {
@@ -484,5 +517,12 @@ body {
   background-color: rgba(255, 255, 255, 0.05);
   -webkit-transform: translateY(-0.8rem);
           transform: translateY(-0.8rem);
+}
+
+.copyrigh {
+  color: #f9f7f6;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 6rem;
 }
 /*# sourceMappingURL=main.css.map */
