@@ -2,9 +2,10 @@
   background-color: $color-primary;
   grid-column: sidebar-start/sidebar-end;
   grid-row: 1 / -1;
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
 }
+
 .nav-btn {
   border: none;
   width: 4.5rem;
@@ -31,5 +32,3 @@
   }
 
 }
-
-

@@ -36,6 +36,12 @@ body {
   font-weight: 400;
 }
 
+.heading-1 {
+  color: #f9f7f6;
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .heading-2 {
   color: #54483A;
   font-size: 4rem;
@@ -140,6 +146,67 @@ body {
 .header {
   background-color: #54483A;
   grid-column: full-start/col-end 6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 29, 44, 0.93)), to(rgba(16, 29, 44, 0.93))), url(../img/hero.jpeg);
+  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: -ms-grid;
+  display: grid;
+  padding: 8rem;
+  padding-top: 4rem;
+  -ms-grid-rows: 1fr min-content 6rem 1fr;
+      grid-template-rows: 1fr -webkit-min-content 6rem 1fr;
+      grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-gap: 1.5rem;
+}
+
+.header__logo {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 2.5rem;
+}
+
+.header__seeon-logos {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 3rem;
+  justify-items: center;
+}
+
+.header__seeon-logos img {
+  height: 2.5rem;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+.header__seeon-text {
+  font-size: 1.6rem;
+  color: #aaa;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr max-content 1fr;
+      grid-template-columns: 1fr -webkit-max-content 1fr;
+      grid-template-columns: 1fr max-content 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-column-gap: 1.5rem;
+}
+
+.header__seeon-text:before, .header__seeon-text:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: CurrentColor;
+}
+
+.header__btn {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 
 .realtors {
